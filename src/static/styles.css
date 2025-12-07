@@ -76,8 +76,8 @@ section h3 {
 
 /* Participants list styling */
 .participants-list {
-  list-style: disc;
-  padding-left: 36px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 10px;
   margin-bottom: 0;
   color: #444;
@@ -87,8 +87,31 @@ section h3 {
 .participants-list li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 6px;
+}
+
+/* Delete/unregister button next to each participant */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background: rgba(198,40,40,0.08);
+}
+.participant-email {
+  flex: 1 1 auto;
+  margin-left: 8px;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Circular badge with initials */
